@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo" href="index.html" aria-label="Главная страница Седона">
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седона">
         </a>
         <ul class="site-navigation">
@@ -32,27 +32,49 @@
         <p class="title">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <h3 class="search-hotel">Поиск гостиницы в Седоне</h3>
-        <!--Здесь будет форма-->
+        <button class="open-form" type="button">Поиск гостиницы в Седоне</button>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="search-item">
+        <label>Дата заезда:
+        <input type="date"  name="date" value="" placeholder="24 АПРЕЛЯ 2017">
+        <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
+        </label>
+        </div>
+        <div class="search-item">
+        <label>Дата выезда:
+        <input type="date"  name="date" value="" placeholder="4 ИЮЛЯ 2017">
+        <img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря">
+        </label>
+        </div>
+        <div class="search-item">
+        <label>Взрослые:
+        <input type="number" name="number" value="" placeholder="2">
+        </label>
+        <label>Дети:
+        <input type="number" name="number" value="" placeholder="0">
+        </label>
+        </div>
+        <button class="button-seach" type="button">Найти</button>
+        </form>
         <!--Здесь будет карта-->
       </section>
     </main>
     <footer class="main-footer">
       <div class="teg">#VISITSEDONA</div>
       <div class="footer-social">
-          <a class="social-button" href="#">Twitter
+          <a class="social-button" href="#" aria-label="Седона в Twitter">
           <img src="img/twitter.svg" width="17" height="15" alt="Twitter">
           </a>
-          <a class="social-button" href="#">Facebook
+          <a class="social-button" href="#" aria-label="Седона в Facebook">
           <img src="img/fb-icon.svg" width="17" height="15" alt="Facebook">
           </a>
-          <a class="social-button" href="#">Youtube
+          <a class="social-button" href="#" aria-label="Седона в Youtube">
             <img src="img/youtube.svg" width="17" height="15" alt="Youtube">
           </a>
       </div>
       <div class="footer-copyright">
         <b>Website by</b>
-        <a class="intensive" href="htmlacademy.ru/intensive/htmlcss">
+        <a class="intensive" href="htmlacademy.ru/intensive/htmlcss" aria-label="HTML academy">
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy">
         </a> 
       </div>
