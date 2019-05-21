@@ -21,6 +21,57 @@
     </nav>
   </header>
   <main>
+    <section calss="filter">
+      <h2 class="visually-hidden">Фильтр гостиниц</h2>
+      <form calss="filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label for="pool">Бассейн</label>
+          <input id="pool" type="checkbox" checked>
+          <label for="parking">Парковка</label>
+          <input id="parking" type="checkbox">
+          <label for="wi-fi">Wi-Fi</label>
+          <input id="wi-fi" type="checkbox">
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <label for="hotel">Гостиница</label>
+          <input id="hotel" type="checkbox" checked>
+          <label for="motel">Мотель</label>
+          <input id="motel" type="checkbox" checked>
+          <label for="apartments">Апартаменты</label>
+          <input id="apartments" type="checkbox" checked>
+        </fieldset>
+        <div class="cost-filter">
+          <label for="cost">Стоимость в сутки (Р):</label>
+          <input id="cost" type="range" min="0" max="3000" value="">
+          <div class="diapason-cost">
+            <span class="diapason">От</span>
+            <input type="number" name="number" value="" placeholder="0" min="0" max="3000"
+              aria-label="Начальный диапазон 0">
+            <span class="diapason">До</span>
+            <input type="number" name="number" value="" placeholder="3000" min="0" max="3000"
+              aria-label="Конечный диапазон 3000">
+          </div>
+          <button class="show" type="button">Показать</button>
+        </div>
+      </form>
+    </section>
+    <section class="sorting">
+      <span>Найдено:3</span>
+      <h3>Сортировка:</h3>
+      <ul class="sorting-type">
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По рейтингу</a></li>
+      </ul>
+      <a class="arrows" href="#" aria-label="Стрелка сортировки вверх">
+        <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелка сортировки вверх">
+      </a>
+      <a class="arrows" href="#" aria-label="Стрелка сортировки вниз">
+        <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелка сортировки вниз">
+      </a>
+    </section>
     <section class="catalog">
       <h1 class="visually-hidden">Гостиницы</h1>
       <ul class="catalog-list">
@@ -93,4 +144,5 @@
     </div>
   </footer>
 </body>
+
 </html>
