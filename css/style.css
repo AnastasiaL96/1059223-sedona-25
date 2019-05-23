@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color:#333333;
+    text-transform: uppercase;
+
+    background-color: white;
+    background-image: url('../img/background-photo.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+}
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    background-color: white;
+}
+.site-navigation{
+    list-style: none;
+}
+.site-navigation a {
+    color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+    background-color: white
+}
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: white
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+.info {
+    text-align: center;
+}
+.info-sedona {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+    background-color: white;   
+}
+.title {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+    font-weight: normal;
+    background-color: white;      
+}
+/* Здесь будет красный блок */
+.search{
+    text-align: center;
+}
+.search b{
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: bold;
+    background-color: white;   
+}
+button{
+    font:inherit;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+.open-form {
+    width: 568px;
+    height: 86px;  
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: white; 
+    background-color: #766357;
+}
+.open-form:hover,
+.open-form:focus {
+    background-color: #604e43;
+}
+.open-form:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #503e33;  
+}
+.search-form{  
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000; 
+    text-transform: uppercase;
+    background-color: white;   
+}
+.search-item input {
+    width: 346px;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+}
+.search-item input:hover{
+    background-color: #ebebeb;
+}
+.search-item input:focus{
+    background-color: #ffffff;
+}
+::-webkit-input-placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    text-transform: uppercase;
+}
+#date-arrival{
+    background-image: url('../img/calendar.svg');   
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#date-departure{
+    background-image: url('../img/calendar.svg');   
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.button-seach {
+    width: 458px;
+    height: 58px; 
+    font-size: 21px;
+    font-weight: bold;
+    color: white; 
+    background-color: #81b3d2;
+}
+.button-seach:hover,
+.button-seach:focus {
+    background-color: #669ec0;
+}
+.button-seach:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd
+    ; 
+}
+/* Здесь будет карта */
+.main-footer{
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    background-color: white;  
+}
+.social-button{
+    width: 46px;
+    height: 48px;
+    background-color:#81b3d2;
+}
+.social-button:hover,
+.social-button:focus {
+    background-color: #669ec0;
+}
+.social-button:active{
+    background-color: #5496bd;
+}
+.footer-copyright b{
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    font-weight: normal;
+    background-color: white;
+}
+#Layer_1{
+    width: 115px;
+    height: 41px;
+    background-color: white;
+}
+a path:hover,
+a path:focus {
+    fill: #81b3d2;
+}
+a path:active{
+    fill: #bdbbbc;
+}
+.inner-page{
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color:#333333;
+    text-transform: uppercase;
+
+    background-color: white;
+    background-image: url('../img/filter-background.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.site-navigation-current a {
+    color: #766357;
+}
+/* Здесь будет красный блок */ 
+.catalog-list{
+    list-style:none;
+}
+a .catalog-name{ 
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: left;
+    color: #000000;
+    background-color: white;
+}
+a .catalog-name:hover,
+a .catalog-name:focus {
+    color: #81b3d2;
+}
+a .catalog-name:active{
+    color: rgba(0, 0, 0, 0.3);
+}
+.description{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    text-align: left;
+    color: #333333;
+    background-color: white; 
+}
+.button-info {
+    width: 110px;
+    height: 27px;
+    font-size:14px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 21px;
+    color: white;
+    background-color:#81b3d2;
+}
+.button-info:hover,
+.button-info:focus {
+    background-color:#669ec0;
+}
+.button-info:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color:#5496bd;
+}
+.button-reservation{
+    width: 142px;
+    height: 27px;
+    font-size:14px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 21px;
+    color: white;
+    background-color:#766357;
+}
+.button-reservation:hover,
+.button-reservation:focus {
+    background-color:#604e43;
+}
+.button-reservation:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color:#503e33;
+}
+.rating b{
+    width: 110px;
+    height: 27px;
+    font-size:14px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 21px;
+    color: #666666;
+    background-color: #f2f2f2;
+}
