@@ -537,3 +537,177 @@ a .catalog-name:active {
     color: #666666;
     background-color: #f2f2f2;
 }
+
+
+/* Сеточные стили */
+
+html,
+body {
+    min-width: 1280px;
+    min-height: 2762px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header {
+    margin-bottom: 61px;
+    min-height: 71px;
+}
+
+.main-navigation {
+    min-height: 71px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header-logo {
+    width: 140px;
+    height: 71px;
+    order: 2;
+}
+
+.main-navigation-wrapper {
+    min-height: 56px;
+    background-color: transparent;
+}
+
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: center;
+}
+
+.site-navigation {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    list-style: none;
+    min-height: 56px;
+}
+
+.info {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height: 627px;
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-sedona {
+    width: 440px;
+    margin-bottom: 38px;
+}
+
+.info-wrapper {
+    width: 100%;
+    background-color: white;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Красный блок */
+
+.search {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search .title {
+    width: 434px;
+    margin-bottom: 52px;
+    margin-top: 32px;
+}
+
+.form-wrapper {
+    margin: 0px;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#adults {
+    width: 38px;
+    height: 38px;
+}
+
+#children {
+    width: 38px;
+    height: 38px;
+}
+
+.main-footer {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 36px;
+    min-height: 120px;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.teg {
+    margin: 0px;
+    min-height: 16px;
+    width: 136px;
+}
+
+.footer-social {
+    margin: 0px;
+    min-height: 48px;
+    width: 150px;
+}
+
+.footer-copyright {
+    margin: 0px;
+    min-height: 41px;
+    width: 197px;
+}
+
+html body.inner-page {
+    min-width: 1280px;
+    min-height: 933px;
+}
+
+
+/* Красный блок */
+
+.catalog {
+    width: 1200px;
+    min-height: 453px;
+    margin-top: 30px;
+    padding-left: 72px;
+}
+
+.catalog-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+}
+
+.catalog-item {
+    width: 1200px;
+    min-height: 151px;
+    background-color: white;
+}
