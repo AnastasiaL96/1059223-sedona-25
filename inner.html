@@ -28,41 +28,47 @@
         </nav>
     </header>
     <main>
-        <section calss="filter">
+        <section class="filter">
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-                <fieldset>
-                    <legend class="filter-title">Инфраструктура:</legend>
-                    <div class="input-check">
-                        <label class="infrastructure" for="pool">Бассейн</label>
-                        <input id="pool" type="checkbox" checked>
-                        <label class="infrastructure" for="parking">Парковка</label>
-                        <input id="parking" type="checkbox">
-                        <label class="infrastructure" for="wi-fi">Wi-Fi</label>
-                        <input id="wi-fi" type="checkbox">
+                <div class="filter-container">
+                    <fieldset>
+                        <legend class="filter-title">Инфраструктура:</legend>
+                        <div class="input-check">
+                            <div class="infrastructure-container">
+                                <label class="infrastructure" for="pool">Бассейн</label>
+                                <input id="pool" type="checkbox" checked>
+                                <label class="infrastructure" for="parking">Парковка</label>
+                                <input id="parking" type="checkbox">
+                                <label class="infrastructure" for="wi-fi">Wi-Fi</label>
+                                <input id="wi-fi" type="checkbox">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="filter-title">Тип жилья:</legend>
+                        <div class="input-check">
+                            <div class="type-housing-container">
+                                <label class="type-housing" for="hotel">Гостиница</label>
+                                <input id="hotel" type="checkbox" checked>
+                                <label class="type-housing" for="motel">Мотель</label>
+                                <input id="motel" type="checkbox" checked>
+                                <label class="type-housing" for="apartments">Апартаменты</label>
+                                <input id="apartments" type="checkbox" checked>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="cost-filter">
+                        <label class="cost-filter-title" for="cost">Стоимость в сутки (Р):</label>
+                        <input id="cost" type="range" min="0" max="3000" value="">
+                        <div class="diapason-cost">
+                            <span class="diapason">От</span>
+                            <input type="number" name="number" value="" placeholder="0" min="0" max="3000" aria-label="Начальный диапазон 0">
+                            <span class="diapason">До</span>
+                            <input type="number" name="number" value="" placeholder="3000" min="0" max="3000" aria-label="Конечный диапазон 3000">
+                        </div>
+                        <button class="show" type="button">Показать</button>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend class="filter-title">Тип жилья:</legend>
-                    <div class="input-check">
-                        <label class="type-housing" for="hotel">Гостиница</label>
-                        <input id="hotel" type="checkbox" checked>
-                        <label class="type-housing" for="motel">Мотель</label>
-                        <input id="motel" type="checkbox" checked>
-                        <label class="type-housing" for="apartments">Апартаменты</label>
-                        <input id="apartments" type="checkbox" checked>
-                    </div>
-                </fieldset>
-                <div class="cost-filter">
-                    <label class="cost-filter-title" for="cost">Стоимость в сутки (Р):</label>
-                    <input id="cost" type="range" min="0" max="3000" value="">
-                    <div class="diapason-cost">
-                        <span class="diapason">От</span>
-                        <input type="number" name="number" value="" placeholder="0" min="0" max="3000" aria-label="Начальный диапазон 0">
-                        <span class="diapason">До</span>
-                        <input type="number" name="number" value="" placeholder="3000" min="0" max="3000" aria-label="Конечный диапазон 3000">
-                    </div>
-                    <button class="show" type="button">Показать</button>
                 </div>
             </form>
         </section>
@@ -148,10 +154,10 @@
                     <img src="img/twitter.svg" width="17" height="15" alt="Twitter">
                 </a>
                 <a class="social-button" href="#" aria-label="Седона в Facebook">
-                    <img src="img/fb-icon.svg" width="17" height="15" alt="Facebook">
+                    <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
                 </a>
                 <a class="social-button" href="#" aria-label="Седона в Youtube">
-                    <img src="img/youtube.svg" width="17" height="15" alt="Youtube">
+                    <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
                 </a>
             </div>
             <div class="footer-copyright">

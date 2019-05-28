@@ -30,7 +30,7 @@
     <main>
         <section class="info">
             <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
-            <img src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
+            <img class="info-picture" src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
             <div class="info-wrapper">
                 <p class="info-sedona">Седона &#8212 небольшой городок в Аризоне, заслуживающий большего!</p>
                 <h2 class="title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
@@ -51,22 +51,23 @@
                 </li>
                 <li class="reasons-item">Красивая дорога
                     <p class="reasons-subtitle">&#8212 №4 &#8212 Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                    <li class="reasons-item">Мало туристов
-                        <p class="reasons-subtitle">&#8212 №5 &#8212 Большинство едет в гранд каньон и толпится там</p>
-                    </li>
-                    <li class="reasons-item">
-                        <ul>
-                            <li class="additional-reasons">Жильё
-                                <p class="reasons-subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                            </li>
-                            <li class="additional-reasons">Еда
-                                <p class="reasons-subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                            </li>
-                            <li class="additional-reasons">Сувениры
-                                <p class="reasons-subtitle">Не только китайского, но и местного производства!</p>
-                            </li>
-                        </ul>
-                    </li>
+                </li>
+                <li class="reasons-item">Мало туристов
+                    <p class="reasons-subtitle">&#8212 №5 &#8212 Большинство едет в гранд каньон и толпится там</p>
+                </li>
+                <li class="reasons-item">
+                    <ul class="reasons-item-container">
+                        <li class="additional-reasons">Жильё
+                            <p class="reasons-subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                        </li>
+                        <li class="additional-reasons">Еда
+                            <p class="reasons-subtitle">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                        </li>
+                        <li class="additional-reasons">Сувениры
+                            <p class="reasons-subtitle">Не только китайского, но и местного производства!</p>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </section>
         <section class="search">
@@ -77,15 +78,15 @@
             <button class="button open-form" type="button">Поиск гостиницы в Седоне</button>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="form-wrapper">
-                    <div class="search-item">
+                    <div class="search-item date">
                         <label for="date-arrival">Дата заезда:</label>
                         <input id="date-arrival" type="date" name="date" value="" placeholder="24 АПРЕЛЯ 2017">
                     </div>
-                    <div class="search-item">
+                    <div class="search-item date">
                         <label for="date-departure"> Дата выезда:</label>
                         <input id="date-departure" type="date" name="date" value="" placeholder="4 ИЮЛЯ 2017">
                     </div>
-                    <div class="search-item">
+                    <div class="search-item sum">
                         <label for="adults">Взрослые:</label>
                         <input id="adults" type="number" name="number" value="" placeholder="2">
                         <label for="children">Дети:</label>
@@ -105,10 +106,10 @@
                     <img src="img/twitter.svg" width="17" height="15" alt="Twitter">
                 </a>
                 <a class="social-button" href="#" aria-label="Седона в Facebook">
-                    <img src="img/fb-icon.svg" width="17" height="15" alt="Facebook">
+                    <img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
                 </a>
                 <a class="social-button" href="#" aria-label="Седона в Youtube">
-                    <img src="img/youtube.svg" width="17" height="15" alt="Youtube">
+                    <img src="img/youtube.svg" width="20" height="16" alt="Youtube">
                 </a>
             </div>
             <div class="footer-copyright">

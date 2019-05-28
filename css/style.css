@@ -17,6 +17,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
@@ -45,12 +50,17 @@ a {
     background-color: white
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    overflow: hidden;
 }
 
 .info {
@@ -353,7 +363,7 @@ div.diapason-cost ::-webkit-input-placeholder {
 }
 
 div.diapason-cost input {
-    width: 314px;
+    width: 157px;
     height: 32px;
     border: solid 2px white;
     background-color: transparent;
@@ -592,55 +602,101 @@ body {
     min-height: 56px;
 }
 
+.info-picture {
+    margin: auto;
+}
+
 .info {
     width: 100%;
     margin: 0px;
     padding: 0px;
     min-height: 627px;
     margin-bottom: 56px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 .info-sedona {
     width: 440px;
     margin-bottom: 38px;
+    margin: auto;
 }
 
 .info-wrapper {
     width: 100%;
     background-color: white;
     margin-top: 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 
-/* Красный блок */
+/* Красный блок начало (не закончен)*/
 
-.search {
-    margin: 0px;
-    padding: 0px;
-    margin-top: 57px;
+.reasons {
+    margin: 0;
+    padding: 0;
+    min-height: 1098px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.reasons-item {
+    margin: 0;
+    min-height: 256px;
+    padding-top: 46px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 64px;
+}
+
+.reasons-subtitle {
+    margin-top: 31px;
+    width: 303px;
+    height: 34px;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.reasons-item-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Красный блок конец*/
+
+.search {
+    min-height: 30px;
+    margin-top: 57px;
+    text-align: center;
 }
 
 .search .title {
     width: 434px;
+    min-height: 30px;
+    margin: auto;
     margin-bottom: 52px;
     margin-top: 32px;
 }
 
 .form-wrapper {
-    margin: 0px;
     padding: 55px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.search-item.date {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 29px;
+}
+
+.search-item.sum {
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 54px;
 }
 
 #adults {
@@ -689,7 +745,84 @@ html body.inner-page {
 }
 
 
-/* Красный блок */
+/* Красный блок начало (не закончен)*/
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+}
+
+.infrastructure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.type-housing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cost-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sorting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    background-color: white;
+}
+
+.sorting span {
+    padding-top: 31px;
+    padding-left: 72px;
+    padding-right: 49px;
+    padding-bottom: 33px;
+    min-height: 22px;
+}
+
+.sorting h3 {
+    padding-top: 41px;
+    padding-right: 40px;
+    padding-bottom: 33px;
+    min-height: 8px;
+}
+
+.arrows {
+    margin-left: auto;
+}
+
+.sorting-type {
+    display: flex;
+}
+
+.sorting-cost {
+    padding-top: 41px;
+    padding-right: 33px;
+    padding-bottom: 33px;
+    min-height: 10px;
+}
+
+.sorting-type {
+    padding-top: 41px;
+    padding-right: 33px;
+    padding-bottom: 33px;
+    min-height: 10px;
+}
+
+.sorting-rating {
+    padding-top: 41px;
+    padding-right: 612px;
+    padding-bottom: 33px;
+    min-height: 10px;
+}
+
+
+/* Красный блок конец*/
 
 .catalog {
     width: 1200px;
