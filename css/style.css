@@ -84,64 +84,65 @@
         background-color: white;
     }
     
+    .info-sedona {
+        position: relative;
+    }
+    
+    .info-sedona::before {
+        content: "";
+        position: absolute;
+        width: 1200px;
+        height: 59px;
+        bottom: 170px;
+        right: -380px;
+        background-image: url('../img/polygon.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
     .reasons-item {
         list-style: none;
         font-size: 21px;
         line-height: 21px;
         text-align: center;
-        color: #ffffff;
         font-weight: bold;
     }
     
-    li.reasons-item:first-child {
-        background-color: #81b3d2;
-    }
-    
-    .reasons-subtitle {
-        font-size: 14px;
-        line-height: 26px;
-        text-align: center;
-        color: #333333;
-        font-weight: normal;
-        background-color: white;
-    }
-    
-    li.reasons-item:nth-child(2) {
-        background-color: #81b3d2;
-    }
-    
-    li.reasons-item:nth-child(3) {
-        color: #000000;
-        background-color: #eeeeee;
-    }
-    
-    li.reasons-item:nth-child(4) {
-        color: #000000;
-        background-color: #eeeeee;
-    }
-    
-    li.reasons-item:nth-child(5) {
-        color: #000000;
-        background-color: #eeeeee;
-    }
-    
-    li p.reasons-subtitle:nth-last-child(1) {
-        color: #000000;
-        background-color: #eeeeee;
-    }
-    
-    li p.reasons-subtitle:nth-child(2) {
+    .reasons-title {
+        font-size: 21px;
+        line-height: 21px;
         color: #ffffff;
         background-color: #81b3d2;
     }
     
-    .additional-reasons {
-        list-style: none;
-        color: #000000;
+    .reasons-title .reasons-subtitle {
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        font-weight: normal;
     }
     
-    li.additional-reasons p.reasons-subtitle {
+    .list-wrapper {
+        color: #000000;
+        background-color: #eeeeee;
+    }
+    
+    .reasons-wrapper {
+        font-size: 14px;
+        line-height: 26px;
+        color: #333333;
+        text-align: center;
+        font-weight: normal;
+    }
+    
+    .reasons-item-container {
+        list-style: none;
+        color: #000000;
         background-color: white;
+    }
+    
+    .additional-reasons .reasons-wrapper {
+        color: #333333;
     }
     
     .search {
@@ -217,15 +218,37 @@
     }
     
     #date-arrival {
+        position: relative;
+    }
+    
+    #date-arrival::after {
+        content: "";
+        position: absolute;
+        width: 21px;
+        height: 22px;
+        left: 316px;
+        top: 8px;
         background-image: url('../img/calendar.svg');
         background-repeat: no-repeat;
         background-position: right;
+        opacity: 0.2;
     }
     
     #date-departure {
+        position: relative;
+    }
+    
+    #date-departure::after {
+        content: "";
+        position: absolute;
+        width: 21px;
+        height: 22px;
+        left: 316px;
+        top: 8px;
         background-image: url('../img/calendar.svg');
         background-repeat: no-repeat;
         background-position: right;
+        opacity: 0.2;
     }
     
     .button-seach {
@@ -260,6 +283,16 @@
         width: 46px;
         height: 48px;
         background-color: #81b3d2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer-social {
+        width: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     
     .social-button:hover,
@@ -269,6 +302,10 @@
     
     .social-button:active {
         background-color: #5496bd;
+    }
+    
+    .social-button img:active {
+        opacity: 0.3;
     }
     
     .footer-copyright b {
@@ -504,6 +541,9 @@
         line-height: 21px;
         color: white;
         background-color: #81b3d2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .button-info:hover,
@@ -525,6 +565,9 @@
         line-height: 21px;
         color: white;
         background-color: #766357;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .button-reservation:hover,
@@ -537,6 +580,13 @@
         background-color: #503e33;
     }
     
+    .catalog-reservation {
+        width: 258px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
     .rating b {
         width: 110px;
         height: 27px;
@@ -546,6 +596,9 @@
         line-height: 21px;
         color: #666666;
         background-color: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     /* Сеточные стили */
     
@@ -609,7 +662,7 @@
     
     .info-picture {
         margin: auto;
-        margin-top: 61px
+        margin-bottom: 140px;
     }
     
     .info {
@@ -635,7 +688,6 @@
     .info-wrapper {
         width: 100%;
         background-color: white;
-        margin-top: 140px;
         text-align: center;
     }
     /* Красный блок начало (не закончен)*/
@@ -662,7 +714,7 @@
         min-height: 256px;
     }
     
-    .reasons-subtitle {
+    .reasons-title {
         margin: 0;
         width: 400px;
         min-height: 256px;
@@ -676,6 +728,10 @@
         height: 256px;
         display: flex;
         justify-content: space-between;
+    }
+    
+    .reasons-title {
+        order: -1;
     }
     
     .bridge-container {
@@ -692,8 +748,28 @@
     .reasons-wrapper {
         padding: 0;
         margin: 0;
+        width: 284px;
+        min-height: 36px;
+        text-align: center;
+    }
+    
+    .title-wrapper {
         width: 400px;
         min-height: 256px;
+        text-align: center;
+        background-color: #eeeeee;
+    }
+    
+    h4 {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 28px;
+    }
+    
+    .additional-reasons {
+        width: 400px;
+        min-height: 256px;
+        text-align: center;
     }
     
     .reasons-item-container {
@@ -702,43 +778,85 @@
         display: flex;
         justify-content: space-between;
     }
+    
+    .one-wrapper {
+        order: -1;
+    }
+    
+    .reasons-item.two-wrapper {
+        order: -1;
+    }
+    
+    .wrapper-img {
+        order: -1;
+    }
     /* Красный блок конец*/
     
     .search {
+        width: 100%;
         min-height: 30px;
         margin-top: 57px;
         text-align: center;
     }
     
     .search .title {
-        width: 434px;
-        min-height: 30px;
         margin: auto;
+        width: 440px;
+        min-height: 30px;
         margin-bottom: 52px;
         margin-top: 32px;
     }
     
+    .popup {
+        min-height: 481px;
+        width: 568px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .search-form {
+        width: 568px;
+        height: 395px;
+    }
+    
     .form-wrapper {
-        padding: 55px;
+        padding-right: 55px;
+        padding-left: 55px;
+        padding-top: 55px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
     }
     
     .search-item.date {
-        padding-left: 55px;
-        padding-right: 55px;
+        height: 38px;
         padding-bottom: 29px;
     }
     
-    .search-item.sum {
-        padding-left: 55px;
-        padding-right: 55px;
-        padding-bottom: 54px;
+    .search-item.date label[for="date-arrival"] {
+        padding-right: 19px;
     }
     
-    .sum label {
+    .search-item.date label[for="date-departure"] {
+        padding-right: 15px;
+    }
+    
+    .search-item.sum {
+        height: 38px;
+        padding-bottom: 54px;
+        width: 460px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .sum label[for="adults"] {
         padding-right: 41px;
+    }
+    
+    .search-item.sum label[for="children"] {
+        padding-right: 27px;
     }
     
     #adults {
@@ -785,6 +903,11 @@
         min-width: 1280px;
         min-height: 933px;
     }
+    
+    .main-header.inner-header {
+        margin: 0;
+        margin-bottom: 31px;
+    }
     /* Красный блок начало (не закончен)*/
     
     .filter {
@@ -799,22 +922,30 @@
         display: flex;
     }
     
+    .filter-title.title-infrastructure {
+        padding-left: 72px;
+    }
+    
     .infrastructure-container {
+        padding-left: 72px;
+        padding-right: 158px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
     
     .type-housing-container {
+        padding-right: 366px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
     
     .cost-filter {
+        padding-right: 74px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     
     .sorting {
@@ -846,7 +977,7 @@
     }
     
     .arrows {
-        margin-left: auto;
+        margin: 0;
     }
     
     .sorting-type {
@@ -876,12 +1007,21 @@
         padding-bottom: 33px;
         min-height: 10px;
     }
+    
+    .arrow-up {
+        padding-right: 12px;
+    }
+    
+    .arrow-down {
+        padding-right: 73px;
+    }
     /* Красный блок конец*/
     
     .catalog {
-        width: 1200px;
+        width: 1203px;
         min-height: 453px;
         padding-left: 72px;
+        background-color: white;
     }
     
     .catalog-list {
@@ -893,7 +1033,60 @@
     }
     
     .catalog-item {
-        width: 1200px;
-        min-height: 151px;
+        width: 1203px;
+        min-height: 95px;
         background-color: white;
+        margin-bottom: 61px;
+    }
+    
+    .catalog-item:first-child {
+        margin-top: 30px;
+    }
+    
+    .catalog-item:last-child {
+        margin-bottom: 67px;
+    }
+    
+    .catalog-picture {
+        padding-left: 72px;
+    }
+    
+    .rating {
+        min-height: 95px;
+        padding-right: 73px;
+        padding-left: 522px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    .stars {
+        order: -1;
+    }
+    
+    .item-description {
+        padding-left: 30px;
+        min-height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .catalog-name {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .img-container {
+        height: 90px;
+    }
+    
+    .flex-catalog {
+        width: 1200px;
+        min-height: 95px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
     }

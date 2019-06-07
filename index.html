@@ -38,38 +38,57 @@
         </section>
         <section class="features">
             <ul class="reasons">
-                <li class="reasons-item">Настоящий городок
+                <li class="reasons-item one-wrapper">
                     <div class="city-container">
                         <img src="img/feature-picture-1.jpg" width="800" height="401" alt="Фото Седоны">
-                        <p class="reasons-subtitle">&#8212 №1 &#8212 Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                        <div class="reasons-title">
+                            <h4>Настоящий городок</h4>
+                            <p class="reasons-subtitle">&#8212 №1 &#8212 <br>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                        </div>
                     </div>
                 </li>
-                <li class="reasons-item">Там есть Мост дьявола
+                <li class="reasons-item">
                     <div class="bridge-container">
-                        <img src="img/feature-picture-2.jpg" width="800" height="400" alt="Фото моста дьявола">
-                        <p class="reasons-subtitle">&#8212 №2 &#8212 Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                        <img class="wrapper-img" src="img/feature-picture-2.jpg" width="800" height="400" alt="Фото моста дьявола">
+                        <div class="reasons-title">
+                            <h4>Там есть Мост дьявола</h4>
+                            <p class="reasons-subtitle">&#8212 №2 &#8212 <br>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                        </div>
                     </div>
                 </li>
                 <div class="list-wrapper">
-                    <li class="reasons-item">Небольшая площадь
-                        <p class="reasons-subtitle reasons-wrapper">&#8212 №3 &#8212 Все достопримечательности находятся очень близко</p>
+                    <li class="reasons-item">
+                        <div class="title-wrapper">
+                            <h4>Небольшая площадь</h4>
+                            <p class="reasons-subtitle reasons-wrapper">&#8212 №3 &#8212 <br>Все достопримечательности находятся очень близко</p>
+                        </div>
                     </li>
-                    <li class="reasons-item">Красивая дорога
-                        <p class="reasons-subtitle reasons-wrapper">&#8212 №4 &#8212 Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </li>
-                    <li class="reasons-item">Мало туристов
-                        <p class="reasons-subtitle reasons-wrapper">&#8212 №5 &#8212 Большинство едет в гранд каньон и толпится там</p>
+                    <li class="reasons-item">
+                        <div class="title-wrapper">
+                            <h4>Красивая дорога</h4>
+                            <p class="reasons-subtitle reasons-wrapper">&#8212 №4 &#8212 <br>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                        </div>
+                    </li>
+                    <li class="reasons-item">
+                        <div class="title-wrapper">
+                            <h4>Мало туристов</h4>
+                            <p class="reasons-subtitle reasons-wrapper">&#8212 №5 &#8212 <br>Большинство едет в гранд каньон и толпится там</p>
+                        </div>
                     </li>
                 </div>
-                <li class="reasons-item">
+                <li class="reasons-item two-wrapper">
                     <ul class="reasons-item-container">
-                        <li class="additional-reasons">Жильё
+                        <li class="additional-reasons">
+                            <h4>Жильё</h4>
                             <p class="reasons-subtitle reasons-wrapper">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
-                        <li class="additional-reasons">Еда
+                        <li class="additional-reasons">
+                            <h4>Еда</h4>
                             <p class="reasons-subtitle reasons-wrapper">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                         </li>
-                        <li class="additional-reasons">Сувениры
+                        <li class="additional-reasons">
+                            <h4>Сувениры</h4>
                             <p class="reasons-subtitle reasons-wrapper">Не только китайского, но и местного производства!</p>
                         </li>
                     </ul>
@@ -81,26 +100,32 @@
             <p class="title">
                 Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
-            <button class="button open-form" type="button">Поиск гостиницы в Седоне</button>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="form-wrapper">
-                    <div class="search-item date">
-                        <label for="date-arrival">Дата заезда:</label>
-                        <input id="date-arrival" type="date" name="date" value="" placeholder="24 АПРЕЛЯ 2017">
+            <div class="popup">
+                <button class="button open-form" type="button">Поиск гостиницы в Седоне</button>
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="form-wrapper">
+                        <div class="search-item date">
+                            <label for="date-arrival">Дата заезда:</label>
+                            <input id="date-arrival" type="date" name="date" value="" placeholder="24 АПРЕЛЯ 2017">
+                        </div>
+                        <div class="search-item date">
+                            <label for="date-departure"> Дата выезда:</label>
+                            <input id="date-departure" type="date" name="date" value="" placeholder="4 ИЮЛЯ 2017">
+                        </div>
+                        <div class="search-item sum">
+                            <div>
+                                <label for="adults">Взрослые:</label>
+                                <input id="adults" type="number" name="number" value="" placeholder="2">
+                            </div>
+                            <div>
+                                <label for="children">Дети:</label>
+                                <input id="children" type="number" name="number" value="" placeholder="0">
+                            </div>
+                        </div>
+                        <button class="button button-seach" type="button">Найти</button>
                     </div>
-                    <div class="search-item date">
-                        <label for="date-departure"> Дата выезда:</label>
-                        <input id="date-departure" type="date" name="date" value="" placeholder="4 ИЮЛЯ 2017">
-                    </div>
-                    <div class="search-item sum">
-                        <label for="adults">Взрослые:</label>
-                        <input id="adults" type="number" name="number" value="" placeholder="2">
-                        <label for="children">Дети:</label>
-                        <input id="children" type="number" name="number" value="" placeholder="0">
-                    </div>
-                    <button class="button button-seach" type="button">Найти</button>
-                </div>
-            </form>
+                </form>
+            </div>
             <img src="img/map.jpg" width="1200" height="593" alt="Карта">
         </section>
     </main>
