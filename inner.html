@@ -38,16 +38,25 @@
                             <div class="input-check">
                                 <div class="infrastructure-container">
                                     <div class="filter-wraper">
-                                        <label class="infrastructure" for="pool">Бассейн</label>
-                                        <input id="pool" type="checkbox" checked>
+                                        <label class="infrastructure">
+                                        <input type="checkbox" checked class="visually-hidden">
+                                        <span class="checkbox-indicator"></span>
+                                        Бассейн
+                                        </label>
                                     </div>
                                     <div class="filter-wraper">
-                                        <label class="infrastructure" for="parking">Парковка</label>
-                                        <input id="parking" type="checkbox">
+                                        <label class="infrastructure">
+                                        <input type="checkbox" class="visually-hidden">
+                                        <span class="checkbox-indicator"></span>
+                                        Парковка
+                                        </label>
                                     </div>
                                     <div class="filter-wraper">
-                                        <label class="infrastructure" for="wi-fi">Wi-Fi</label>
-                                        <input id="wi-fi" type="checkbox">
+                                        <label class="infrastructure">
+                                        <input type="checkbox" class="visually-hidden">
+                                        <span class="checkbox-indicator"></span>
+                                        Wi-Fi
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -57,28 +66,41 @@
                             <div class="input-check">
                                 <div class="type-housing-container">
                                     <div class="filter-wraper">
-                                        <label class="type-housing" for="hotel">Гостиница</label>
-                                        <input id="hotel" type="checkbox" checked>
+                                        <label class="type-housing">
+                                        <input type="checkbox" checked class="visually-hidden">
+                                        <span class="checkbox-indicator"></span>
+                                        Гостиница
+                                        </label>
                                     </div>
                                     <div class="filter-wraper">
-                                        <label class="type-housing" for="motel">Мотель</label>
-                                        <input id="motel" type="checkbox" checked>
+                                        <label class="type-housing">
+                                        <input type="checkbox" checked class="visually-hidden">
+                                        <span class="checkbox-indicator"></span>
+                                        Мотель
+                                        </label>
                                     </div>
                                     <div class="filter-wraper">
-                                        <label class="type-housing" for="apartments">Апартаменты</label>
-                                        <input id="apartments" type="checkbox" checked>
+                                        <label class="type-housing">
+                                        <input type="checkbox" checked class="visually-hidden">
+                                        <span class="checkbox-indicator"></span>
+                                        Апартаменты
+                                        </label>
                                     </div>
                                 </div>
                             </div>
                         </fieldset>
-                        <div class="cost-filter">
-                            <label class="cost-filter-title" for="cost">Стоимость в сутки (Р):</label>
-                            <input id="cost" type="range" min="0" max="3000" value="">
-                            <div class="diapason-cost">
-                                <span class="diapason">От</span>
-                                <input type="number" name="number" value="" placeholder="0" min="0" max="3000" aria-label="Начальный диапазон 0">
-                                <span class="diapason">До</span>
-                                <input type="number" name="number" value="" placeholder="3000" min="0" max="3000" aria-label="Конечный диапазон 3000">
+                        <div class="filter-range">
+                            <div class="filter-range-title">Стоимость в сутки (р):</div>
+                            <div class="price-controls">
+                                <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+                                <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
+                            </div>
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="range-toggle range-toggle-min"></div>
+                                <div class="range-toggle range-toggle-max"></div>
                             </div>
                             <button class="show" type="button">Показать</button>
                         </div>
