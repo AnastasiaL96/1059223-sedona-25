@@ -86,11 +86,7 @@ img {
     overflow: hidden;
 }
 
-.info {
-    text-align: center;
-}
-
-.info-sedona {
+h2 .info-sedona {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
@@ -134,8 +130,6 @@ img {
 .reasons-title {
     font-size: 21px;
     line-height: 21px;
-    color: #ffffff;
-    background-color: #81b3d2;
 }
 
 .reasons-title .reasons-subtitle {
@@ -172,7 +166,7 @@ img {
     text-align: center;
 }
 
-.search b {
+.search h3 {
     font-size: 30px;
     line-height: 36px;
     color: #000000;
@@ -500,10 +494,10 @@ fieldset {
     color: #ffffff;
 }
 
-.filter-wraper .infrastructure {
+.infrastructure {
     position: relative;
-    padding-left: 40px;
     cursor: pointer;
+    display: flex;
 }
 
 .infrastructure input[type="checkbox"]+.checkbox-indicator {
@@ -529,9 +523,8 @@ fieldset {
     opacity: 0.3;
 }
 
-.filter-wraper .type-housing {
+.type-housing {
     position: relative;
-    padding-left: 40px;
     cursor: pointer;
 }
 
@@ -565,7 +558,6 @@ input[type="checkbox"] {
 .filter-range {
     width: 330px;
     padding-top: 27px;
-    padding-right: 74px;
 }
 
 .filter-range-title {
@@ -880,7 +872,6 @@ body {
 
 .main-navigation {
     background-color: white;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -897,13 +888,7 @@ body {
     margin-left: -70px;
 }
 
-.main-navigation-wrapper {
-    width: 1200px;
-    height: 56px;
-    background-color: transparent;
-}
-
-.main-navigation-wrapper .container {
+.main-navigation .container {
     display: flex;
     justify-content: center;
 }
@@ -937,19 +922,12 @@ body {
     background-position: bottom center;
     background-repeat: no-repeat;
     padding-top: 77px;
+    text-align: center;
 }
 
 .info-picture {
     margin: auto;
     margin-bottom: 78px;
-}
-
-.info {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    min-height: 640px;
-    text-align: center;
 }
 
 .white-back {
@@ -971,8 +949,6 @@ body {
 }
 
 .info-wrapper {
-    width: 100%;
-    min-height: 200px;
     background-color: white;
     text-align: center;
 }
@@ -1004,24 +980,13 @@ body {
 
 .reasons-title {
     margin: 0;
-    width: 400px;
-    min-height: 256px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.town {
-    width: 280px;
-    min-height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.bridge {
-    width: 303px;
-    min-height: 150px;
+    min-width: 280px;
+    max-width: 303px;
+    min-height: 146px;
+    padding-top: 46px;
+    padding-bottom: 64px;
+    padding-right: 60px;
+    padding-left: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1029,20 +994,15 @@ body {
 
 .city-container {
     width: 1200px;
-    height: 256px;
+    min-height: 256px;
     display: flex;
     justify-content: space-between;
+    color: #ffffff;
+    background-color: #81b3d2;
 }
 
 .reasons-title {
     order: -1;
-}
-
-.bridge-container {
-    width: 1200px;
-    height: 256px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .city-img {
@@ -1066,12 +1026,17 @@ body {
 }
 
 .title-wrapper {
-    width: 400px;
-    min-height: 256px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 143px;
+    min-width: 208px;
+    max-width: 262px;
+    padding-top: 50px;
+    padding-bottom: 63px;
+    padding-right: 70px;
+    padding-left: 70px;
     background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 }
 
 h4 {
@@ -1091,30 +1056,6 @@ h4 {
     font-weight: normal;
 }
 
-.square {
-    width: 208px;
-    min-height: 155px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.road {
-    width: 262px;
-    min-height: 155px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.tourists {
-    width: 246px;
-    min-height: 155px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .additional-reasons {
     width: 400px;
     text-align: center;
@@ -1126,14 +1067,6 @@ h4 {
     min-height: 330px;
     display: flex;
     justify-content: space-between;
-}
-
-.one-wrapper {
-    order: -1;
-}
-
-.reasons-item.two-wrapper {
-    order: -1;
 }
 
 .wrapper-img {
@@ -1252,6 +1185,10 @@ h4 {
 
 .search-item.date {
     height: 38px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     padding-bottom: 29px;
 }
 
@@ -1338,9 +1275,10 @@ html body.inner-page {
 /* Красный блок начало */
 
 .filter {
-    width: 1200px;
     margin: 0 auto;
     padding: 0;
+    padding-left: 72px;
+    padding-right: 74px;
     background-image: url('../img/filter-background.jpg');
     background-position: bottom 53% center;
     background-repeat: no-repeat;
@@ -1358,7 +1296,6 @@ fieldset {
 }
 
 .filter-title.title-infrastructure {
-    padding-left: 72px;
     padding-bottom: 24px;
     padding-top: 28px;
 }
@@ -1371,7 +1308,6 @@ fieldset {
 .infrastructure-container {
     width: 120px;
     min-height: 115px;
-    padding-left: 72px;
     padding-right: 136px;
     display: flex;
     flex-direction: row;
@@ -1389,20 +1325,16 @@ fieldset {
     align-content: space-between;
 }
 
-.filter-wraper {
-    display: flex;
-}
-
-.filter-wraper input {
+.infrastructure input {
     order: -1;
 }
 
 .infrastructure-container label {
-    padding-left: 15px;
+    padding-left: 25px;
 }
 
 .type-housing-container label {
-    padding-left: 15px;
+    padding-left: 25px;
 }
 
 .sorting {
@@ -1437,11 +1369,11 @@ fieldset {
     justify-content: space-between;
 }
 
-.sorting-container span {
+.sorting-result {
     padding-right: 49px;
 }
 
-.sorting-container h3 {
+.sorting-params {
     padding-right: 40px;
 }
 
@@ -1475,6 +1407,9 @@ fieldset {
     padding-bottom: 27px;
     margin-top: 28px;
     border-bottom: 1px solid rgba(0, 1, 1, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 .catalog-picture {
@@ -1511,14 +1446,6 @@ fieldset {
 
 .img-container {
     height: 90px;
-}
-
-.flex-catalog {
-    width: 1200px;
-    min-height: 95px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
 }
 
 .additional-reasons h4 {
