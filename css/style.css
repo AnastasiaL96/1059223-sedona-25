@@ -103,63 +103,16 @@ h2 .info-sedona {
     background-color: white;
 }
 
-.info-sedona {
-    position: relative;
-}
-
-.info-sedona::before {
-    content: "";
-    position: absolute;
-    width: 1200px;
-    height: 59px;
-    bottom: 129px;
-    right: -380px;
-    background-image: url('../img/polygon.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.reasons-item {
-    list-style: none;
-    font-size: 21px;
-    line-height: 21px;
+.reasons-item--additional {
+    width: 280px;
+    padding-top: 162px;
+    padding-bottom: 70px;
+    padding-right: 60px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    font-weight: bold;
-}
-
-.reasons-title {
-    font-size: 21px;
-    line-height: 21px;
-}
-
-.reasons-title .reasons-subtitle {
-    font-size: 14px;
-    line-height: 26px;
-    text-align: center;
-    font-weight: normal;
-}
-
-.list-wrapper {
-    color: #000000;
-    background-color: #eeeeee;
-}
-
-.reasons-wrapper {
-    font-size: 14px;
-    line-height: 21px;
-    color: #333333;
-    text-align: center;
-    font-weight: normal;
-}
-
-.reasons-item-container {
-    list-style: none;
-    color: #000000;
-    background-color: white;
-}
-
-.additional-reasons .reasons-wrapper {
-    color: #333333;
 }
 
 .search {
@@ -245,7 +198,7 @@ div.search-item ::-webkit-input-placeholder {
     width: 21px;
     height: 22px;
     left: 480px;
-    top: 150px;
+    top: 63px;
     opacity: 0.3;
 }
 
@@ -268,7 +221,7 @@ div.search-item ::-webkit-input-placeholder {
     width: 21px;
     height: 22px;
     left: 480px;
-    top: 218px;
+    top: 130px;
     opacity: 0.3;
 }
 
@@ -781,6 +734,7 @@ a .catalog-name:active {
     text-align: left;
     color: #333333;
     background-color: white;
+    margin-bottom: 10px;
 }
 
 .button-info {
@@ -860,12 +814,6 @@ body {
     min-width: 1280px;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
 .main-header {
     min-height: 56px;
 }
@@ -886,11 +834,7 @@ body {
     top: 0;
     left: 50%;
     margin-left: -70px;
-}
-
-.main-navigation .container {
-    display: flex;
-    justify-content: center;
+    z-index: 1;
 }
 
 .site-navigation li {
@@ -913,99 +857,90 @@ body {
 }
 
 .info-container {
-    width: 100%;
     margin: 0 auto;
     padding: 0;
-    width: 1200px;
     min-height: 640px;
-    background-image: url('../img/background-photo.jpg');
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    padding-top: 77px;
     text-align: center;
+}
+
+.info-welcome {
+    height: 508px;
+    background-image: url('../img/background-photo.jpg');
+    background-position: top -80px center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.info-welcome::before {
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 59px;
+    top: 450px;
+    right: 0px;
+    background-image: url('../img/polygon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .info-picture {
     margin: auto;
-    margin-bottom: 78px;
+    padding-top: 77px;
 }
 
 .white-back {
     background-color: white;
     width: 100%;
-    min-height: 200px;
 }
 
 .info-sedona {
-    width: 440px;
     padding-bottom: 30px;
-    padding-top: 48px;
     margin: auto;
 }
 
 .info-wrapper .title {
     margin: 0;
-    padding-bottom: 48px;
 }
 
 .info-wrapper {
     background-color: white;
     text-align: center;
-}
-
-
-/* Красный блок начало */
-
-.features {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0;
+    padding-top: 52px;
+    padding-bottom: 56px;
 }
 
 .reasons {
     margin: 0;
     padding: 0;
-    min-height: 1098px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    counter-reset: reasons;
 }
 
 .reasons-item {
     margin: 0;
     padding: 0;
     min-height: 256px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-.reasons-title {
-    margin: 0;
-    min-width: 280px;
-    max-width: 303px;
-    min-height: 146px;
-    padding-top: 46px;
-    padding-bottom: 64px;
-    padding-right: 60px;
-    padding-left: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.city-container {
-    width: 1200px;
-    min-height: 256px;
-    display: flex;
-    justify-content: space-between;
-    color: #ffffff;
+.reasons-item--image {
     background-color: #81b3d2;
+    color: white;
 }
 
-.reasons-title {
-    order: -1;
+.reasons-item--reverse {
+    flex-direction: row-reverse;
 }
 
-.city-img {
+.reasons-item--gray {
+    background-color: #eeeeee;
+}
+
+.reasons-item-img {
     width: 800px;
     height: 256px;
     background-image: url('../img/feature-picture-1.jpg');
@@ -1013,75 +948,64 @@ body {
     background-repeat: no-repeat;
 }
 
-.wrapper-img {
-    width: 800px;
-    height: 256px;
+.reasons-item-img--bridge {
     background-image: url('../img/feature-picture-2.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
 }
 
-.list-wrapper {
-    display: flex;
-}
-
-.title-wrapper {
-    min-height: 143px;
-    min-width: 208px;
-    max-width: 262px;
-    padding-top: 50px;
-    padding-bottom: 63px;
-    padding-right: 70px;
-    padding-left: 70px;
-    background-color: #eeeeee;
+.reasons-item-info {
+    width: 280px;
+    padding-top: 46px;
+    padding-bottom: 45px;
+    padding-right: 60px;
+    padding-left: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
-}
-
-h4 {
-    padding: 0;
-    margin: 0;
-}
-
-.reasons-subtitle {
-    margin: 0;
-}
-
-.subtitle-sedona {
-    margin: 0;
-    font-size: 14px;
-    line-height: 26px;
+    justify-content: space-between;
     text-align: center;
+}
+
+.reasons-item-title {
+    font-size: 21px;
+    line-height: 21px;
+    margin-top: 0;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.reasons-item-title::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    counter-increment: reasons;
+    content: "- №" counter(reasons) " -";
+    font-size: 14px;
+    line-height: 21px;
     font-weight: normal;
 }
 
-.additional-reasons {
-    width: 400px;
-    text-align: center;
-}
-
-.reasons-item-container {
-    padding: 0;
+.reasons-item-text {
     margin: 0;
-    min-height: 330px;
-    display: flex;
-    justify-content: space-between;
 }
 
-.wrapper-img {
-    order: -1;
+.reasons-additional-title {
+    margin: 0;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
 }
 
-.housing {
+.title-housing {
     position: relative;
     padding-bottom: 25px;
 }
 
-.housing::before {
+.title-housing::before {
     content: "";
     position: absolute;
-    top: 60px;
+    top: -103px;
     left: 50%;
     width: 75px;
     height: 72px;
@@ -1089,15 +1013,15 @@ h4 {
     background-image: url('../img/icon-1.svg');
 }
 
-.food {
+.title-food {
     position: relative;
     padding-bottom: 25px;
 }
 
-.food::before {
+.title-food::before {
     content: "";
     position: absolute;
-    top: 62px;
+    top: -100px;
     left: 50%;
     width: 74px;
     height: 70px;
@@ -1105,42 +1029,21 @@ h4 {
     background-image: url('../img/icon-3.svg');
 }
 
-.souvenirs {
+.title-souvenirs {
     position: relative;
     padding-bottom: 25px;
 }
 
-.souvenirs::before {
+.title-souvenirs::before {
     content: "";
     position: absolute;
-    top: 56px;
+    top: -105px;
     left: 50%;
     width: 64px;
     height: 76px;
     margin-left: -32px;
     background-image: url('../img/icon-2.svg');
 }
-
-.housing-container {
-    width: 252px;
-    min-height: 35px;
-    padding-left: 73px;
-}
-
-.food-container {
-    width: 290px;
-    min-height: 35px;
-    padding-left: 58px;
-}
-
-.souvenirs-container {
-    width: 273px;
-    min-height: 35px;
-    padding-left: 64px;
-}
-
-
-/* Красный блок конец*/
 
 .search {
     width: 100%;
@@ -1153,24 +1056,26 @@ h4 {
     margin: auto;
     width: 440px;
     min-height: 30px;
-    margin-bottom: 132px;
-    ;
+    margin-bottom: 40px;
     margin-top: 22px;
 }
 
 .popup {
-    min-height: 481px;
     width: 568px;
-    position: absolute;
     left: 26.5%;
-    transform: translateX(-50%);
-    transform: translateY(-18%);
-    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.2);
+    margin: o auto;
+    position: relative;
 }
 
 .search-form {
     width: 568px;
     height: 395px;
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.2);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding-bottom: 40px;
 }
 
 .form-wrapper {
@@ -1310,9 +1215,9 @@ fieldset {
     min-height: 115px;
     padding-right: 136px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
+    justify-content: space-between;
 }
 
 .type-housing-container {
@@ -1320,9 +1225,9 @@ fieldset {
     min-height: 115px;
     padding-right: 340px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-between;
+    justify-content: space-between;
 }
 
 .infrastructure input {
@@ -1331,10 +1236,12 @@ fieldset {
 
 .infrastructure-container label {
     padding-left: 25px;
+    margin-bottom: 20px;
 }
 
 .type-housing-container label {
     padding-left: 25px;
+    margin-bottom: 20px;
 }
 
 .sorting {
@@ -1348,8 +1255,10 @@ fieldset {
 
 .sorting-container {
     width: 1054px;
-    min-height: 86px;
+    min-height: 22px;
     padding-left: 72px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1427,7 +1336,7 @@ fieldset {
 }
 
 .stars {
-    order: -1;
+    margin-bottom: 45px;
 }
 
 .item-description {
@@ -1442,12 +1351,45 @@ fieldset {
 .catalog-name {
     padding: 0;
     margin: 0;
+    margin-bottom: 9px;
 }
 
 .img-container {
     height: 90px;
 }
 
-.additional-reasons h4 {
+
+/*.additional-reasons h4 {
+    margin: 0;
     padding-top: 161px;
+}*/
+
+.form-off {
+    display: none;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px)
+    }
+    70% {
+        transform: translateY(30px)
+    }
+    90% {
+        transform: translateY(-10px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+.search-form {
+    animation-name: bounce;
+    animation-duration: 0.8s;
+}
+
+.map {
+    width: 1200px;
+    height: 473px;
+    background-image: url('../img/map.jpg');
 }

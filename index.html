@@ -16,92 +16,71 @@
                 <a class="main-header-logo" href="index.html" aria-label="Главная страница Седона">
                     <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седона">
                 </a>
-                <div class="container">
-                    <ul class="site-navigation">
-                        <li><a href="info.html">Информация</a></li>
-                        <li class="foto"><a href="foto.html">Фото и видео</a></li>
-                        <li><a href="map.html">Карта штата</a></li>
-                        <li><a href="inner.html">Гостиницы</a></li>
-                    </ul>
-                </div>
+                <ul class="site-navigation">
+                    <li><a href="info.html">Информация</a></li>
+                    <li class="foto"><a href="foto.html">Фото и видео</a></li>
+                    <li><a href="map.html">Карта штата</a></li>
+                    <li><a href="inner.html">Гостиницы</a></li>
+                </ul>
             </nav>
         </header>
         <main>
             <section class="info-container">
                 <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
-                <img class="info-picture" src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
+                <div class="info-welcome">
+                    <img class="info-picture" src="img/welcome.png" width="459" height="353" alt="Welcome to Sedona">
+                </div>
                 <div class="info-wrapper white-back">
-                    <h2 class="info-sedona">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h2>
-                    <h2 class="title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+                    <h2 class="info-sedona">Седона &#8212; небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+                    <p class="title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                 </div>
             </section>
-            <section class="features">
+            <section>
                 <ul class="reasons">
-                    <li class="reasons-item one-wrapper">
-                        <div class="city-container">
-                            <div class="city-img"></div>
-                            <div class="reasons-title">
-                                <h4>Настоящий<br>городок</h4>
-                                <p class="reasons-subtitle">&#8212; №1 &#8212;</p>
-                                <p class="subtitle-sedona"> Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                            </div>
+                    <li class="reasons-item reasons-item--image">
+                        <div class="reasons-item-info">
+                            <h4 class="reasons-item-title">Настоящий<br>городок</h4>
+                            <p class="reasons-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                         </div>
+                        <div class="reasons-item-img"></div>
                     </li>
-                    <li class="reasons-item two-wrapper">
-                        <ul class="reasons-item-container">
-                            <li class="additional-reasons">
-                                <h4 class="housing">Жильё</h4>
-                                <div class="housing-container">
-                                    <p class="reasons-subtitle reasons-wrapper">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                                </div>
+                    <li>
+                        <ul class="reasons-item">
+                            <li class="reasons-item--additional">
+                                <h4 class="reasons-additional-title title-housing">Жильё</h4>
+                                <p class="reasons-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                             </li>
-                            <li class="additional-reasons">
-                                <h4 class="food">Еда</h4>
-                                <div class="food-container">
-                                    <p class="reasons-subtitle reasons-wrapper">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                                </div>
+                            <li class="reasons-item--additional">
+                                <h4 class="reasons-additional-title title-food">Еда</h4>
+                                <p class="reasons-item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                             </li>
-                            <li class="additional-reasons">
-                                <h4 class="souvenirs">Сувениры</h4>
-                                <div class="souvenirs-container">
-                                    <p class="reasons-subtitle reasons-wrapper">Не только китайского, но и местного производства!</p>
-                                </div>
+                            <li class="reasons-item--additional">
+                                <h4 class="reasons-additional-title title-souvenirs">Сувениры</h4>
+                                <p class="reasons-item-text">Не только китайского, но и местного производства!</p>
                             </li>
                         </ul>
                     </li>
-                    <li class="reasons-item">
-                        <div class="city-container">
-                            <div class="wrapper-img"></div>
-                            <div class="reasons-title">
-                                <h4>Там есть<br>Мост дьявола</h4>
-                                <p class="reasons-subtitle">&#8212; №2 &#8212;</p>
-                                <p class="subtitle-sedona">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                            </div>
+                    <li class="reasons-item reasons-item--image reasons-item--reverse">
+                        <div class="reasons-item-info">
+                            <h4 class="reasons-item-title">Там есть<br>Мост дьявола</h4>
+                            <p class="reasons-item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                        </div>
+                        <div class="reasons-item-img reasons-item-img--bridge"></div>
+                    </li>
+                    <li class="reasons-item reasons-item--gray">
+                        <div class="reasons-item-info">
+                            <h4 class="reasons-item-title">Небольшая<br>площадь</h4>
+                            <p class="reasons-item-text">Все достопримечательности находятся очень близко</p>
+                        </div>
+                        <div class="reasons-item-info">
+                            <h4 class="reasons-item-title">Красивая<br>дорога</h4>
+                            <p class="reasons-item-text"> Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                        </div>
+                        <div class="reasons-item-info">
+                            <h4 class="reasons-item-title">Мало<br>туристов</h4>
+                            <p class="reasons-item-text">Большинство едет в гранд каньон и толпится там</p>
                         </div>
                     </li>
-                    <div class="list-wrapper">
-                        <li class="reasons-item">
-                            <div class="title-wrapper">
-                                <h4>Небольшая<br>площадь</h4>
-                                <p class="reasons-subtitle reasons-wrapper">&#8212; №3 &#8212;</p>
-                                <p class="subtitle-sedona">Все достопримечательности находятся очень близко</p>
-                            </div>
-                        </li>
-                        <li class="reasons-item">
-                            <div class="title-wrapper">
-                                <h4>Красивая<br>дорога</h4>
-                                <p class="reasons-subtitle reasons-wrapper">&#8212; №4 &#8212;</p>
-                                <p class="subtitle-sedona"> Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                            </div>
-                        </li>
-                        <li class="reasons-item">
-                            <div class="title-wrapper">
-                                <h4>Мало<br>туристов</h4>
-                                <p class="reasons-subtitle reasons-wrapper">&#8212; №5 &#8212;</p>
-                                <p class="subtitle-sedona">Большинство едет в гранд каньон и толпится там</p>
-                            </div>
-                        </li>
-                    </div>
                 </ul>
             </section>
             <section class="search">
@@ -115,12 +94,12 @@
                         <div class="form-wrapper">
                             <div class="search-item date">
                                 <label for="date-arrival">Дата заезда:</label>
-                                <input id="date-arrival" type="text" onfocus="(this.type='date')" name="date" value="" placeholder="24 АПРЕЛЯ 2017">
+                                <input id="date-arrival" type="text" onfocus="(this.type='date')" name="arrival" placeholder="24 АПРЕЛЯ 2017">
                                 <svg class="calendar-arrival" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
                             </div>
                             <div class="search-item date">
                                 <label for="date-departure"> Дата выезда:</label>
-                                <input id="date-departure" type="text" onfocus="(this.type='date')" name="date" value="" placeholder="4 ИЮЛЯ 2017">
+                                <input id="date-departure" type="text" onfocus="(this.type='date')" name="departure" value="" placeholder="4 ИЮЛЯ 2017">
                                 <svg class="calendar-departure" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
                             </div>
                             <div class="search-item sum">
@@ -128,7 +107,7 @@
                                     <label for="adults">Взрослые:</label>
                                     <div class="adults-wrapper">
                                         <button class="button-minus" type="button"></button>
-                                        <input id="adults" type="number" name="number" value="" placeholder="2">
+                                        <input id="adults" type="number" name="col-adults" value="" placeholder="2">
                                         <button class="button-plus" type="button"></button>
                                     </div>
                                 </div>
@@ -136,17 +115,18 @@
                                     <label for="children">Дети:</label>
                                     <div class="children-wrapper">
                                         <button class="button-minus" type="button"></button>
-                                        <input id="children" type="number" name="number" value="" placeholder="0">
+                                        <input id="children" type="number" name="col-children" value="" placeholder="0">
                                         <button class="button-plus" type="button"></button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="button button-seach" type="button">Найти</button>
+                            <button class="button button-seach" type="submit">Найти</button>
                         </div>
                     </form>
                 </div>
                 <div class="map">
-                    <img src="img/map.jpg" width="1200" height="473" alt="Карта">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74086.29258314773!2d-111.8435597271182!3d34.85164159668877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1561224633906!5m2!1sru!2sru"
+                        width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </section>
         </main>
@@ -178,6 +158,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
