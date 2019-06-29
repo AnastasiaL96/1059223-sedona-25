@@ -103,7 +103,7 @@ h2 .info-sedona {
     background-color: white;
 }
 
-.reasons-item--additional {
+.reasons-additional-item {
     width: 280px;
     padding-top: 162px;
     padding-bottom: 70px;
@@ -127,7 +127,7 @@ h2 .info-sedona {
     background-color: white;
 }
 
-button {
+.button {
     font: inherit;
     text-align: center;
     vertical-align: middle;
@@ -143,6 +143,7 @@ button {
     line-height: 26px;
     color: white;
     background-color: #766357;
+    cursor: pointer;
 }
 
 .open-form:hover,
@@ -179,7 +180,7 @@ button {
     background-color: #ffffff;
 }
 
-div.search-item ::-webkit-input-placeholder {
+.search-item ::-webkit-input-placeholder {
     font-size: 14px;
     font-weight: bold;
     text-align: left;
@@ -188,54 +189,27 @@ div.search-item ::-webkit-input-placeholder {
     padding-left: 15px;
 }
 
-#date-arrival {
+.date {
     position: relative;
 }
 
-.calendar-arrival {
+.date-icon {
     content: "";
     position: absolute;
     width: 21px;
     height: 22px;
-    left: 480px;
-    top: 63px;
+    right: 9px;
+    top: 9px;
     opacity: 0.3;
 }
 
-.calendar-arrival:hover,
-.calendar-arrival:focus {
+.date-icon:hover,
+.date-icon:focus {
     opacity: 1;
 }
 
-.calendar-arrival:active {
+.date-icon:active {
     fill: #81b3d2;
-}
-
-#date-departure {
-    position: relative;
-}
-
-.calendar-departure {
-    content: "";
-    position: absolute;
-    width: 21px;
-    height: 22px;
-    left: 480px;
-    top: 130px;
-    opacity: 0.3;
-}
-
-.calendar-departure:hover,
-.calendar-departure:focus {
-    opacity: 1;
-}
-
-.calendar-departure:active {
-    fill: #81b3d2;
-}
-
-#date-departure:active::after {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>');
 }
 
 .children-wrapper {
@@ -271,6 +245,11 @@ div.search-item ::-webkit-input-placeholder {
     height: 40px;
     background-color: #f2f2f2;
     position: relative;
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
 }
 
 .button-minus::before {
@@ -288,6 +267,11 @@ div.search-item ::-webkit-input-placeholder {
     height: 40px;
     background-color: #f2f2f2;
     position: relative;
+    font: inherit;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
 }
 
 .button-plus::before {
@@ -392,7 +376,7 @@ input[type="number"]:focus {
     background-color: white;
 }
 
-#Layer_1 {
+svg[data-name="Layer 1"] {
     width: 115px;
     height: 41px;
     background-color: white;
@@ -509,7 +493,7 @@ input[type="checkbox"] {
 }
 
 .filter-range {
-    width: 330px;
+    width: 320px;
     padding-top: 27px;
 }
 
@@ -560,7 +544,7 @@ input[type="checkbox"] {
 
 .price-controls .max-price {
     width: 70px;
-    padding-left: 80px;
+    padding-left: 86px;
     padding-top: 3px;
 }
 
@@ -622,7 +606,7 @@ input[type="checkbox"] {
 .show {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 34px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -806,9 +790,6 @@ a .catalog-name:active {
     justify-content: center;
 }
 
-
-/* Сеточные стили */
-
 html,
 body {
     min-width: 1280px;
@@ -853,7 +834,7 @@ body {
 }
 
 .foto {
-    padding-right: 233px;
+    padding-right: 240px;
 }
 
 .info-container {
@@ -905,8 +886,8 @@ body {
 .info-wrapper {
     background-color: white;
     text-align: center;
-    padding-top: 52px;
-    padding-bottom: 56px;
+    padding-top: 58px;
+    padding-bottom: 51px;
 }
 
 .reasons {
@@ -925,6 +906,16 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+
+.reasons-additional {
+    margin: 0;
+    padding: 0;
+    min-height: 256px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
 }
 
 .reasons-item--image {
@@ -999,7 +990,7 @@ body {
 
 .title-housing {
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .title-housing::before {
@@ -1047,7 +1038,7 @@ body {
 
 .search {
     min-height: 640px;
-    margin-top: 54px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -1055,7 +1046,7 @@ body {
     margin: auto;
     width: 440px;
     min-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
     margin-top: 22px;
 }
 
@@ -1074,7 +1065,6 @@ body {
     left: 0;
     right: 0;
     top: 100%;
-    padding-bottom: 40px;
 }
 
 .form-wrapper {
@@ -1120,12 +1110,12 @@ body {
     padding-right: 27px;
 }
 
-#adults {
+input[name="col-children"] {
     width: 38px;
     height: 38px;
 }
 
-#children {
+input[name="col-adults"] {
     width: 38px;
     height: 38px;
 }
@@ -1139,7 +1129,7 @@ body {
 .main-footer .container {
     min-height: 48px;
     width: 1200px;
-    padding-top: 27px;
+    padding-top: 35px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1174,9 +1164,6 @@ html body.inner-page {
 .main-header.inner-header {
     margin: 0;
 }
-
-
-/* Красный блок начало */
 
 .filter {
     margin: 0 auto;
@@ -1289,9 +1276,6 @@ fieldset {
     padding-right: 504px;
 }
 
-
-/* Красный блок конец*/
-
 .catalog {
     width: 1200px;
     min-height: 453px;
@@ -1313,7 +1297,7 @@ fieldset {
     min-height: 95px;
     background-color: white;
     padding-bottom: 27px;
-    margin-top: 28px;
+    margin-top: 23px;
     border-bottom: 1px solid rgba(0, 1, 1, 0.2);
     display: flex;
     flex-direction: row;
@@ -1356,12 +1340,6 @@ fieldset {
 .img-container {
     height: 90px;
 }
-
-
-/*.additional-reasons h4 {
-    margin: 0;
-    padding-top: 161px;
-}*/
 
 .form-off {
     display: none;

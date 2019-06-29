@@ -11,10 +11,11 @@ var storage_children = localStorage.getItem("children");
 open.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.toggle("form-off");
-    popup.classList.remove("modal-error");
-    if (storage) {
-        adults.value = storage;
-        children.value = storage;
+    if (storage_adults) {
+        adults.value = storage_adults;
+    }
+    if (storage_children) {
+        children.value = storage_children;
     }
 });
 
@@ -22,6 +23,9 @@ form.addEventListener("submit", function(evt) {
     if (!date_arrival.value || !date_departure.value || !adults.value || !children.value) {
         evt.preventDefault();
         popup.classList.add("modal-error");
+        setTimeout(function() {
+            popup.classList.remove("modal-error");
+        }, 1000);
     } else {
         localStorage.setItem("adults", adults.value);
         localStorage.setItem("children", children.value);
