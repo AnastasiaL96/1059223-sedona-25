@@ -5,18 +5,17 @@ var date_arrival = popup.querySelector("[name=arrival]");
 var date_departure = popup.querySelector("[name=departure]");
 var adults = popup.querySelector("[name=col-adults]");
 var children = popup.querySelector("[name=col-children]");
-var storage_adults = localStorage.getItem("adults");
-var storage_children = localStorage.getItem("children");
+
+var isLocalStorage = typeof localStorage !== "undefined";
+var storage_adults = (isLocalStorage) ? localStorage.getItem("adults") : 2;
+var storage_children = (isLocalStorage) ? localStorage.getItem("children") : 0;
 
 open.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.toggle("form-off");
-    if (storage_adults) {
-        adults.value = storage_adults;
-    }
-    if (storage_children) {
-        children.value = storage_children;
-    }
+
+    adults.value = storage_adults;
+    children.value = storage_children;
 });
 
 form.addEventListener("submit", function(evt) {
@@ -27,7 +26,9 @@ form.addEventListener("submit", function(evt) {
             popup.classList.remove("modal-error");
         }, 1000);
     } else {
-        localStorage.setItem("adults", adults.value);
-        localStorage.setItem("children", children.value);
+        if (isLocalStorage) {
+            localStorage.setItem("adults", adults.value);
+            localStorage.setItem("children", children.value);
+        }
     }
 });

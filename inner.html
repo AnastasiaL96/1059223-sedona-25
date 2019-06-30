@@ -28,107 +28,98 @@
             <section class="filter">
                 <h2 class="visually-hidden">Фильтр гостиниц</h2>
                 <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-                    <div class="filter-container">
-                        <fieldset>
-                            <legend class="filter-title title-infrastructure">Инфраструктура:</legend>
-                            <div class="input-check">
-                                <div class="infrastructure-container">
-                                    <label class="infrastructure">
-                                        <input type="checkbox" checked>
+                    <fieldset class="fiiter-item">
+                        <legend class="filter-title title-infrastructure">Инфраструктура:</legend>
+                        <label class="filter-checkbox checkbox">
+                                        <input class="checkbox-input" type="checkbox" checked>
                                         <span class="checkbox-indicator" tabindex="0"></span>
-                                        Бассейн
+                                        <span class="checkbox-text">Бассейн</span>
                                     </label>
-                                    <label class="infrastructure">
-                                        <input type="checkbox">
+                        <label class="filter-checkbox checkbox">
+                                        <input class="checkbox-input" type="checkbox">
                                         <span class="checkbox-indicator" tabindex="0"></span>
-                                        Парковка
+                                        <span class="checkbox-text">Парковка</span>
                                     </label>
-                                    <label class="infrastructure">
-                                        <input type="checkbox">
+                        <label class="filter-checkbox checkbox">
+                                        <input class="checkbox-input" type="checkbox">
                                         <span class="checkbox-indicator" tabindex="0"></span>
-                                        Wi-Fi
+                                        <span class="checkbox-text">Wi-Fi</span>
                                     </label>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend class="filter-title title-type-housing">Тип жилья:</legend>
-                            <div class="input-check">
-                                <div class="type-housing-container">
-                                    <label class="type-housing">
-                                        <input type="checkbox" checked>
-                                        <span class="checkbox-indicator" tabindex="0"></span> Гостиница
+                    </fieldset>
+                    <fieldset class="fiiter-item">
+                        <legend class="filter-title title-type-housing">Тип жилья:</legend>
+                        <label class="filter-checkbox checkbox">
+                                        <input class="checkbox-input" type="checkbox" checked>
+                                        <span class="checkbox-indicator" tabindex="0"></span> 
+                                        <span class="checkbox-text">Гостиница</span>
                                     </label>
-                                    <label class="type-housing">
-                                        <input type="checkbox" checked>
+                        <label class="filter-checkbox checkbox">
+                                        <input class="checkbox-input" type="checkbox" checked>
                                         <span class="checkbox-indicator" tabindex="0"></span>
-                                        Мотель
+                                        <span class="checkbox-text">Мотель</span>
                                     </label>
-                                    <label class="type-housing">
-                                        <input type="checkbox" checked>
+                        <label class="filter-checkbox checkbox">
+                                        <input class="checkbox-input" type="checkbox" checked>
                                         <span class="checkbox-indicator" tabindex="0"></span>
-                                        Апартаменты
+                                        <span class="checkbox-text">Апартаменты</span>
                                     </label>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <div class="filter-range">
-                            <div class="filter-range-title">Стоимость в сутки (р):</div>
-                            <div class="price-controls">
-                                <label class="min-price">от<input type="text" name="min-price" value="0"></label>
-                                <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
-                            </div>
-                            <div class="range-controls">
-                                <div class="scale">
-                                    <div class="bar"></div>
-                                </div>
-                                <div class="range-toggle range-toggle-min"></div>
-                                <div class="range-toggle range-toggle-max"></div>
-                            </div>
-                            <button class="show" type="submit">Показать</button>
+                    </fieldset>
+                    <div class="filter-range">
+                        <div class="filter-range-title">Стоимость в сутки (р):</div>
+                        <div class="price-controls">
+                            <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+                            <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
                         </div>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="range-toggle range-toggle-min"></div>
+                            <div class="range-toggle range-toggle-max"></div>
+                        </div>
+                        <button class="show" type="submit">Показать</button>
                     </div>
                 </form>
             </section>
             <section class="sorting">
-                <div class="sorting-container">
-                    <span class="sorting-result">Найдено:3</span>
-                    <h3 class="sorting-params">Сортировка:</h3>
-                    <ul class="sorting-type">
+                <span class="sorting-result">Найдено:3</span>
+                <div class="sorting-type">
+                    <h3 class="sorting-type-title">Сортировка:</h3>
+                    <ul class="sorting-type-list">
                         <li class="sorting-cost"><a href="#">По цене</a></li>
                         <li class="sorting-on-type"><a href="#">По типу</a></li>
                         <li class="sorting-rating"><a href="#">По рейтингу</a></li>
                     </ul>
-                    <div class="arrows-container">
-                        <a class="arrows" href="#" aria-label="Стрелка сортировки вверх">
-                            <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                </div>
+                <div class="sorting-arrows">
+                    <a class="arrows" href="#" aria-label="Стрелка сортировки вверх">
+                        <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
           <path fill="#231F20" d="M5.5 0L0 10h11z" /></svg>
-                        </a>
-                        <a class="arrows" href="#" aria-label="Стрелка сортировки вниз">
-                            <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    </a>
+                    <a class="arrows" href="#" aria-label="Стрелка сортировки вниз">
+                        <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
           <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </section>
             <section class="catalog">
                 <h1 class="visually-hidden">Гостиницы</h1>
                 <ul class="catalog-list">
                     <li class="catalog-item">
-                        <div class="img-container">
+                        <div class="catalog-item-img">
                             <img class="catalog-picture" src="img/Amara-Resort-&-Spa.jpg" width="135" height="90" alt="Фото отеля Amara Resort & Spa">
                         </div>
-                        <div class="item-description">
+                        <div class="catalog-item-description">
                             <a class="catalog-link" href="#">
                                 <h2 class="catalog-name">Amara Resort & Spa</h2>
                             </a>
-                            <span class="description">Гостиница &emsp;&emsp; от 4000 р.</span>
+                            <span class="catalog-description">Гостиница &emsp;&emsp; от 4000 р.</span>
                             <div class="catalog-reservation">
                                 <a class="button button-info" href="#">Подробнее</a>
                                 <a class="button button-reservation" href="#">Забронировать</a>
                             </div>
                         </div>
-                        <div class="rating">
+                        <div class="catalog-item-rating">
                             <div class="stars">
                                 <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
                                 <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
@@ -139,20 +130,20 @@
                         </div>
                     </li>
                     <li class="catalog-item">
-                        <div class="img-container">
+                        <div class="catalog-item-img">
                             <img class="catalog-picture" src="img/Desert-Quail-Inn.jpg" width="135" height="90" alt="Фото отеля Desert Quail Inn">
                         </div>
-                        <div class="item-description">
+                        <div class="catalog-item-description">
                             <a class="catalog-link" href="#">
                                 <h2 class="catalog-name">Desert Quail Inn</h2>
                             </a>
-                            <span class="description">Мотель &emsp;&emsp;&emsp;&emsp; от 3000 р.</span>
+                            <span class="catalog-description">Мотель &emsp;&emsp;&emsp;&emsp; от 3000 р.</span>
                             <div class="catalog-reservation">
                                 <a class="button button-info" href="#">Подробнее</a>
                                 <a class="button button-reservation" href="#">Забронировать</a>
                             </div>
                         </div>
-                        <div class="rating">
+                        <div class="catalog-item-rating">
                             <div class="stars">
                                 <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
                                 <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
@@ -162,20 +153,20 @@
                         </div>
                     </li>
                     <li class="catalog-item">
-                        <div class="img-container">
+                        <div class="catalog-item-img">
                             <img class="catalog-picture" src="img/Villas-At-Poco-Diablo.jpg" width="135" height="90" alt="Фото отеля Villas At Poco Diablo">
                         </div>
-                        <div class="item-description">
+                        <div class="catalog-item-description">
                             <a class="catalog-link" href="#">
                                 <h2 class="catalog-name">Villas At Poco Diablo</h2>
                             </a>
-                            <span class="description">Апартаменты  &nbsp;&nbsp;&nbsp;&nbsp; от 2000 р.</span>
+                            <span class="catalog-description">Апартаменты  &nbsp;&nbsp;&nbsp;&nbsp; от 2000 р.</span>
                             <div class="catalog-reservation">
                                 <a class="button button-info" href="#">Подробнее</a>
                                 <a class="button button-reservation" href="#">Забронировать</a>
                             </div>
                         </div>
-                        <div class="rating">
+                        <div class="catalog-item-rating">
                             <div class="stars">
                                 <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
                                 <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
