@@ -297,7 +297,7 @@ img {
 
 .title-food {
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .title-food::before {
@@ -313,7 +313,7 @@ img {
 
 .title-souvenirs {
     position: relative;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .title-souvenirs::before {
@@ -330,12 +330,11 @@ img {
 .reasons-additional-item {
     width: 280px;
     padding-top: 162px;
-    padding-bottom: 70px;
+    padding-bottom: 75px;
     padding-right: 60px;
     padding-left: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-align: center;
 }
 
@@ -736,12 +735,12 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: white;
 }
 
-a path:hover,
-a path:focus {
+.intensive path:hover,
+.intensive path:focus {
     fill: #81b3d2;
 }
 
-a path:active {
+.intensive path:active {
     fill: #bdbbbc;
 }
 
@@ -1117,20 +1116,20 @@ input[type="checkbox"] {
     background-color: white;
 }
 
-a.arrows path {
+.arrows path {
     fill: #cacaca;
 }
 
-a .arrow-down path {
+.arrow-down path {
     fill: #81b3d2;
 }
 
-a.arrows path:hover,
-a.arrows path:focus {
+.arrows path:hover,
+.arrows path:focus {
     fill: #000000;
 }
 
-a.arrows path:active {
+.arrows path:active {
     fill: #81b3d2;
 }
 
@@ -1152,7 +1151,7 @@ a.arrows path:active {
     padding: 0;
     min-height: 95px;
     background-color: white;
-    padding-bottom: 29px;
+    padding-bottom: 33px;
     padding-top: 23px;
     padding-left: 72px;
     padding-right: 72px;
@@ -1163,22 +1162,10 @@ a.arrows path:active {
     align-items: flex-end;
 }
 
-.catalog-item-rating {
-    min-height: 95px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.stars {
-    margin-bottom: 45px;
-}
-
 .catalog-item-description {
-    width: 258px;
+    width: 708px;
     padding-left: 30px;
-    padding-right: 522px;
+    padding-right: 32px;
     min-height: 95px;
     display: flex;
     flex-direction: column;
@@ -1193,9 +1180,10 @@ a.arrows path:active {
 
 .catalog-item-img {
     height: 90px;
+    width: 135px;
 }
 
-a .catalog-name {
+.catalog-name {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
@@ -1204,12 +1192,12 @@ a .catalog-name {
     background-color: white;
 }
 
-a .catalog-name:hover,
-a .catalog-name:focus {
+.catalog-name:hover,
+.catalog-name:focus {
     color: #81b3d2;
 }
 
-a .catalog-name:active {
+.catalog-name:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1221,10 +1209,15 @@ a .catalog-name:active {
     color: #333333;
     background-color: white;
     margin-bottom: 12px;
+    display: flex;
+}
+
+.catalog-description-title {
+    margin: 0;
+    width: 116px;
 }
 
 .button-info {
-    width: 110px;
     height: 27px;
     font-size: 14px;
     font-weight: bold;
@@ -1235,6 +1228,8 @@ a .catalog-name:active {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 17px;
+    padding-left: 17px;
 }
 
 .button-info:hover,
@@ -1248,7 +1243,6 @@ a .catalog-name:active {
 }
 
 .button-reservation {
-    width: 142px;
     height: 27px;
     font-size: 14px;
     font-weight: bold;
@@ -1259,6 +1253,8 @@ a .catalog-name:active {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .button-reservation:hover,
@@ -1278,18 +1274,44 @@ a .catalog-name:active {
     justify-content: space-between;
 }
 
-.catalog-item-rating b {
+.catalog-item-rating {
+    min-height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.rating-stars {
+    margin-bottom: 45px;
+    height: 17px;
+    min-width: 18px;
+    background-image: url('../img/star.svg');
+    background-repeat: repeat-x;
+}
+
+.rating-text {
     width: 110px;
     height: 27px;
     font-size: 14px;
     font-weight: normal;
     text-align: center;
-    line-height: 21px;
+    line-height: 27px;
     color: #666666;
     background-color: #f2f2f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.rating-stars--4 {
+    width: 72px;
+}
+
+.rating-stars--3 {
+    width: 54px;
+}
+
+.rating-stars--2 {
+    width: 36px;
 }
 
 @keyframes bounce {
