@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    min-width: 1220px;
+    min-width: 1200px;
 }
 
 body {
@@ -154,6 +154,8 @@ img {
 
 .info-sedona {
     padding-bottom: 30px;
+    padding-left: 380px;
+    padding-right: 380px;
     margin: auto;
     font-size: 21px;
     line-height: 26px;
@@ -251,9 +253,9 @@ img {
     font-size: 21px;
     line-height: 21px;
     margin-top: 0;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     position: relative;
+    padding: 0 60px 30px;
 }
 
 .reasons-item--gray h4 {
@@ -337,7 +339,7 @@ img {
 .reasons-additional-item {
     width: 280px;
     padding-top: 162px;
-    padding-bottom: 75px;
+    padding-bottom: 83px;
     padding-right: 60px;
     padding-left: 60px;
     display: flex;
@@ -363,7 +365,7 @@ img {
     color: #000000;
     font-weight: bold;
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     margin-top: 0;
 }
 
@@ -371,7 +373,7 @@ img {
     margin: auto;
     width: 440px;
     min-height: 30px;
-    margin-bottom: 44px;
+    margin-bottom: 50px;
     margin-top: 22px;
     line-height: 24px;
 }
@@ -465,6 +467,7 @@ img {
 .search-item-label--right {
     min-width: 85px;
     padding-right: 25px;
+    padding-left: 5px;
     text-align: right;
 }
 
@@ -520,13 +523,22 @@ img {
     padding-right: 30px;
 }
 
-.search-item-icon {
+.search-item-button {
+    border: none;
     position: absolute;
     top: 50%;
     right: 10px;
     cursor: pointer;
     transform: translateY(-50%);
+    padding: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.search-item-icon {
     fill: #aaa;
+    width: 21px;
+    height: 22px;
 }
 
 .search-item-icon:hover {
@@ -645,7 +657,7 @@ img {
     font-size: 21px;
     padding: 15px;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 23px;
 }
 
 .button-search:hover {
@@ -1048,7 +1060,7 @@ img {
     border-bottom: 1px solid rgba(0, 1, 1, 0.2);
     padding-left: 72px;
     padding-right: 73px;
-    padding-top: 30px;
+    padding-top: 33px;
     padding-bottom: 30px;
     display: flex;
     align-items: center;
@@ -1166,7 +1178,7 @@ img {
 .catalog-item {
     padding: 0;
     background-color: white;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
     padding-top: 23px;
     padding-left: 72px;
     padding-right: 72px;
@@ -1190,7 +1202,7 @@ img {
 .catalog-name {
     padding: 0;
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
     line-height: 21px;
 }
 
@@ -1224,7 +1236,7 @@ img {
     color: #333333;
     background-color: white;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     display: flex;
 }
 
@@ -1291,6 +1303,7 @@ img {
 }
 
 .catalog-item-rating {
+    padding-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1298,12 +1311,17 @@ img {
     margin-left: auto;
 }
 
-.rating-stars {
-    margin-bottom: 52px;
+
+/*.rating-stars {
+    margin-bottom: 47px;
     height: 17px;
     min-width: 18px;
     background-image: url('../img/star.svg');
     background-repeat: repeat-x;
+} */
+
+.rating-stars {
+    margin-bottom: 38px;
 }
 
 .rating-text {
@@ -1312,12 +1330,13 @@ img {
     font-size: 14px;
     font-weight: normal;
     text-align: center;
-    line-height: 21px;
+    line-height: 27px;
     color: #666666;
     background-color: #f2f2f2;
 }
 
-.rating-stars--4 {
+
+/*.rating-stars--4 {
     width: 72px;
 }
 
@@ -1328,6 +1347,7 @@ img {
 .rating-stars--2 {
     width: 36px;
 }
+*/
 
 @keyframes bounce {
     0% {
