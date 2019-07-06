@@ -10,6 +10,11 @@ var isLocalStorage = typeof localStorage !== "undefined";
 var storage_adults = (isLocalStorage) ? localStorage.getItem("adults") : 2;
 var storage_children = (isLocalStorage) ? localStorage.getItem("children") : 0;
 
+document.addEventListener("DOMContentLoaded", function(evt) {
+    evt.preventDefault();
+    popup.classList.toggle("form-off");
+});
+
 open.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.toggle("form-off");
