@@ -167,7 +167,7 @@ img {
 }
 
 .info-sedona {
-    padding-bottom: 30px;
+    padding-bottom: 29px;
     padding-left: 380px;
     padding-right: 380px;
     margin: auto;
@@ -185,7 +185,7 @@ img {
 .info-wrapper {
     background-color: white;
     text-align: center;
-    padding-top: 58px;
+    padding-top: 59px;
     padding-bottom: 51px;
 }
 
@@ -267,9 +267,9 @@ img {
     font-size: 21px;
     line-height: 21px;
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
     position: relative;
-    padding: 0 60px 33px;
+    padding: 0 60px 36px;
 }
 
 .reasons-item--gray h4 {
@@ -304,7 +304,7 @@ img {
 
 .title-housing {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .title-housing::before {
@@ -320,7 +320,7 @@ img {
 
 .title-food {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .title-food::before {
@@ -336,7 +336,7 @@ img {
 
 .title-souvenirs {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .title-souvenirs::before {
@@ -352,7 +352,7 @@ img {
 
 .reasons-additional-item {
     width: 300px;
-    padding-top: 162px;
+    padding-top: 160px;
     padding-bottom: 83px;
     padding-right: 50px;
     padding-left: 50px;
@@ -379,7 +379,7 @@ img {
     color: #000000;
     font-weight: bold;
     background-color: white;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     margin-top: 0;
 }
 
@@ -387,7 +387,7 @@ img {
     margin: auto;
     width: 440px;
     min-height: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     margin-top: 22px;
     line-height: 24px;
 }
@@ -915,7 +915,7 @@ img {
 }
 
 .filter-range {
-    width: 320px;
+    width: 318px;
     margin-left: auto;
 }
 
@@ -926,6 +926,7 @@ img {
     text-align: left;
     color: #ffffff;
     padding-bottom: 11px;
+    padding-left: 3px;
 }
 
 .price-controls {
@@ -966,8 +967,8 @@ img {
 
 .price-controls .max-price {
     width: 70px;
-    padding-left: 86px;
     padding-top: 3px;
+    padding-left: 87px;
 }
 
 .price-controls input {
@@ -993,6 +994,7 @@ img {
 .range-controls .scale {
     height: 2px;
     background: rgba(255, 255, 255, 0.3);
+    padding-left: 5px;
 }
 
 .range-controls .bar {
@@ -1019,11 +1021,11 @@ img {
 }
 
 .range-toggle-min {
-    left: 0;
+    left: 1px;
 }
 
 .range-toggle-max {
-    left: 80%;
+    right: 43px;
 }
 
 .show {
@@ -1038,6 +1040,9 @@ img {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
+    width: 136px;
+    margin-right: 95px;
+    margin-left: auto;
 }
 
 .show:hover,
@@ -1060,7 +1065,7 @@ img {
 }
 
 .sorting-type {
-    padding-left: 52px;
+    padding-left: 49px;
     display: flex;
     justify-content: flex-start;
 }
@@ -1230,7 +1235,7 @@ img {
     color: #333333;
     background-color: white;
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
     display: flex;
 }
 
@@ -1305,7 +1310,7 @@ img {
 }
 
 .rating-stars {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
 }
 
 .rating-text {
@@ -1317,6 +1322,9 @@ img {
     line-height: 21px;
     color: #666666;
     background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rating-stars-img {
