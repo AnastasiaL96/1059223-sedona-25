@@ -283,7 +283,7 @@ img {
     bottom: 0;
     transform: translate(-50%, 50%);
     counter-increment: reasons;
-    content: "- №" counter(reasons) " -";
+    content: "\2014\A0\2116" counter(reasons) "\A0\2014";
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
@@ -300,6 +300,16 @@ img {
     line-height: 21px;
     font-weight: bold;
     color: #000000;
+}
+
+.reasons-item-text--wide {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.reasons-item-text--short {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .title-housing {
@@ -442,6 +452,7 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 458px;
     background: #fff;
     position: absolute;
@@ -470,7 +481,7 @@ img {
 }
 
 .search-item--half {
-    width: 50%;
+    width: 49%;
 }
 
 .search-item-label {
@@ -481,16 +492,15 @@ img {
 }
 
 .search-item-label--right {
-    min-width: 85px;
-    padding-right: 25px;
-    padding-left: 5px;
+    min-width: 82px;
+    padding-right: 28px;
     text-align: right;
 }
 
 .search-item-input {
     background-color: #f2f2f2;
     width: 100%;
-    padding: 9px;
+    padding: 9px 9px 9px 12px;
     height: 16px;
     line-height: 26px;
     border: 2px solid #f2f2f2;
@@ -1056,10 +1066,7 @@ img {
     min-height: 22px;
     background-color: white;
     border-bottom: 1px solid rgba(0, 1, 1, 0.2);
-    padding-left: 72px;
-    padding-right: 73px;
-    padding-top: 33px;
-    padding-bottom: 30px;
+    padding: 33px 73px 28px 71px;
     display: flex;
     align-items: center;
 }
@@ -1106,6 +1113,10 @@ img {
     text-align: left;
     color: #000000;
     background-color: #ffffff;
+}
+
+.sorting-result {
+    margin-top: -3px;
 }
 
 .sorting-type-list {
@@ -1295,7 +1306,7 @@ img {
 }
 
 .catalog-reservation {
-    width: 258px;
+    width: 257px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1310,7 +1321,8 @@ img {
 }
 
 .rating-stars {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
+    padding-top: 5px;
 }
 
 .rating-text {
